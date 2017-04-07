@@ -50,9 +50,7 @@
 	text-align: center;
 	&_social {
 		padding-top: 75px;
-		&_twitter {
-			font-size: 35px;
-		}
+		font-size: 35px;
 	}
 	&_image {
 		padding-top: 55px;
@@ -77,10 +75,14 @@
 	&_signature {
 		padding-top: 35px;
 		padding-bottom: 95px;
-		> p {
+		> p > a {
 			color: #222222;
 			font-size: 20px;
 			line-height: 22px;
+			text-decoration: none;
+			&:hover {
+					color: #e64a19;
+				}
 		}
 	}
 }

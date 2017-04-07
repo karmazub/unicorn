@@ -3992,13 +3992,17 @@ html {
     line-height: 16px;
     font-weight: bold;
     padding-left: 0px; }
+    .form_coctacts_submit[value]:hover {
+      color: #e64a19; }
   .form_coctacts_submit:focus {
     outline: none; }
 
-.form_coctacts .fa-play {
+.form_coctacts .buttonplay {
   color: #898989;
   cursor: pointer;
   font-size: 11px; }
+  .form_coctacts .buttonplay:hover {
+    color: #e64a19; }
 
 .underline {
   border-bottom: 1px solid #474747;
@@ -4019,6 +4023,8 @@ html {
   line-height: 25px;
   text-decoration: none;
   text-transform: capitalize; }
+  .links_item:hover {
+    color: #e64a19; }
 
 .friends_title {
   font-size: 15px;
@@ -4034,6 +4040,8 @@ html {
   line-height: 25px;
   text-decoration: none;
   text-transform: capitalize; }
+  .friends_item:hover {
+    color: #e64a19; }
 
 .social_title {
   font-size: 15px;
@@ -4049,6 +4057,8 @@ html {
   line-height: 25px;
   text-decoration: none;
   text-transform: capitalize; }
+  .social_item:hover {
+    color: #e64a19; }
 
 .footer {
   padding-top: 35px;
@@ -4106,6 +4116,8 @@ html {
       text-transform: uppercase;
       text-decoration: none;
       padding-left: 30px; }
+      .footer__menu_item:hover {
+        color: #e64a19; }
       @media only screen and (max-width: 991px) {
         .footer__menu_item {
           padding-right: 20px;
@@ -4162,9 +4174,8 @@ html {
 .opinion {
   text-align: center; }
   .opinion_social {
-    padding-top: 75px; }
-    .opinion_social_twitter {
-      font-size: 35px; }
+    padding-top: 75px;
+    font-size: 35px; }
   .opinion_image {
     padding-top: 55px; }
   .opinion_quote {
@@ -4183,10 +4194,13 @@ html {
   .opinion_signature {
     padding-top: 35px;
     padding-bottom: 95px; }
-    .opinion_signature > p {
+    .opinion_signature > p > a {
       color: #222222;
       font-size: 20px;
-      line-height: 22px; }
+      line-height: 22px;
+      text-decoration: none; }
+      .opinion_signature > p > a:hover {
+        color: #e64a19; }
 
 .teamMembers {
   text-align: center;
