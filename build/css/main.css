@@ -3918,11 +3918,11 @@ html {
   color: #898989;
   font-size: 14px;
   line-height: 25px;
-  padding-top: 35px; }
+  padding-top: 35px;
+  padding-bottom: 40px; }
 
 .form_coctacts_email {
   background-color: transparent;
-  padding-top: 40px;
   width: 198px;
   border-top: none;
   border-left: none;
@@ -3937,11 +3937,11 @@ html {
     line-height: 16px;
     color: #898989;
     padding-bottom: 5px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: sans-serif; }
 
 .form_coctacts_subject {
   background-color: transparent;
-  padding-top: 40px;
   width: 198px;
   border-top: none;
   border-left: none;
@@ -3955,7 +3955,8 @@ html {
     line-height: 16px;
     color: #898989;
     padding-bottom: 5px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: sans-serif; }
 
 .form_coctacts_mmessage {
   background-color: transparent;

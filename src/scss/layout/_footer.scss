@@ -19,11 +19,12 @@ $backgroundcolor: #212121;
 		font-size: 14px;
 		line-height: 25px;
 		padding-top: 35px;
+		padding-bottom: 40px;
 	}
 	&_coctacts {
 		&_email {
 			background-color: transparent;
-			padding-top: 40px;
+			//padding-top: 40px;
 			width: 198px;
 			border-top: none;
 			border-left: none;
@@ -40,12 +41,13 @@ $backgroundcolor: #212121;
 				color: $textcolor;
 				padding-bottom: 5px;
 				font-weight: bold;
+				font-family: sans-serif;
 			}
 
 		}
 		&_subject {
 			background-color: transparent;
-			padding-top: 40px;
+			//padding-top: 40px;
 			width: 198px;
 			border-top: none;
 			border-left: none;
@@ -61,6 +63,7 @@ $backgroundcolor: #212121;
 				color: $textcolor;
 				padding-bottom: 5px;
 				font-weight: bold;
+				font-family: sans-serif;
 			}
 
 		}
