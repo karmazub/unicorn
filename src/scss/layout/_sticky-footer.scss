@@ -1,0 +1,10 @@
+.page {
+  min-height: 100%;
+  margin-bottom: -100px; // Равно высоте футера
+}
+
+.page:after {
+  content: '';
+  display: block;
+  height: 100px; // Равно высоте футера
+}

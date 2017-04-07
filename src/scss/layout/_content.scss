@@ -1,0 +1,86 @@
+.main_eventsslider {
+	min-height: 215px;
+	background: #efefef;
+}
+.slider_wrapper {
+	padding-top: 60px;
+}
+.eventcard {
+	border-left: 6px solid black;
+	min-height: 75px;
+	padding-top: 15px;
+	padding-left: 18px;
+	@include respond-to(sm) {
+			padding-top: 7px;
+		}
+	&_title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 20px;
+		
+	}
+	&_date {
+		padding-top: 12px;
+		font-size: 14px;
+		line-height: 16px;
+		color: #555555;
+		@include respond-to(sm) {
+			padding-top: 12px;
+		}
+	}
+}
+.events-slider__prevSlide {
+	position: relative;
+}
+.events-slider__nextSlide{
+	position: relative;
+}
+.fa-chevron-left {
+	position: absolute;
+	top: -45px;
+	left: -10px;
+}
+.fa-chevron-right {
+	position: absolute;
+	top: -45px;
+	right: -10px;
+}
+//////////////////////////////////////////////
+.opinion {
+	text-align: center;
+	&_social {
+		padding-top: 75px;
+		&_twitter {
+			font-size: 35px;
+		}
+	}
+	&_image {
+		padding-top: 55px;
+	}
+	&_quote {
+		padding-top: 40px;
+		> p {
+			font-size: 16px;
+			line-height: 30px;
+			font-weight: bold;
+			color: #313131;
+			@include respond-to(xs) {
+				line-height: 20px;
+			}
+			> br {
+				@include respond-to(md) {
+					display: none;
+				}
+			}
+		}
+	}
+	&_signature {
+		padding-top: 35px;
+		padding-bottom: 95px;
+		> p {
+			color: #222222;
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+}

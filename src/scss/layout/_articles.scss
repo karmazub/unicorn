@@ -1,0 +1,130 @@
+// Articles
+.articles{
+	padding: 100px 0 140px 0;
+	&__main{
+		text-align: center;
+		padding-bottom: 110px;
+	}
+	&__mainTitle{
+		font-size: 27px;
+		font-weight: bold;
+		color: #212121;
+		text-align: center;
+		padding-bottom: 46px;
+	}
+	&__main-text{
+		font-size: 16px;
+		line-height: 33px;
+		color: #212121;
+	}
+	&__article{
+		position: relative;
+		background-color: #222222;
+		padding: 70px 40px 70px 40px;
+		height: 368px;
+		@include respond-to(sm) { padding-bottom: 20px;
+		width: 100%; height: 450px;}
+		@include respond-to(xs) { padding-bottom: 20px;
+		width: 100%;}
+		&:hover{
+			&:before{
+			position: absolute;
+			top: 0;
+			left: 40%;
+			display: inline-block;
+			content: "";
+			height: 7px;
+			width: 75px;
+			background-color: #e64a19;
+			}
+		}
+	}
+	&__title{
+		color: #dbdbdb;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+	&__text{
+		padding-top: 35px;
+		font-size: 24px;
+		line-height: 33px;
+		color: #dbdbdb;
+		padding-bottom: 55px;
+	}
+	&__foto{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		border-radius: 60px;
+	}
+	&__writer{
+		line-height: 30px;
+		height: 60px;
+	}
+	&__author{
+		display: inline-block;
+		color: #dbdbdb;
+		padding-left: 15px;
+		text-transform: uppercase;
+	}
+	&__date{
+		display: block;
+	}
+	&__wrapper{
+		position: relative;	
+	}
+	#articles__slider-prev{
+		position: absolute;
+		left: -45px;
+		top: 47%;
+		font-size: 27px;
+		line-height: 31px;
+		color: #222222;
+		@include respond-to(md) { 
+			left: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include respond-to(sm) { 
+			left: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include respond-to(xs) { 
+			left: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	#articles__slider-next{
+		position: absolute;
+		right: -45px;
+		top: 47%;
+		font-size: 27px;
+		line-height: 31px;
+		color: #222222;
+		@include respond-to(md) { 
+			right: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include respond-to(sm) { 
+			right: 10px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include respond-to(xs) { 
+			right: 20px;
+			color: #fff;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
+
