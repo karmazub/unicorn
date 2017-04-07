@@ -1,0 +1,90 @@
+.factsNumbers {
+	background: url(../img/Unicorn_background.jpg) no-repeat top center;
+	text-align: center;
+	min-height: 690px;
+	@include respond-to(sm) {
+			min-height: 560px;
+		}
+	@include respond-to(xs) {
+			min-height: 530px;
+		}
+	&__heading {
+		padding: 100px 0 70px;
+		font-size: 27px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		color: #fff;
+		@include respond-to(sm) {
+			padding: 80px 0 50px;
+		}
+		@include respond-to(xs) {
+			padding: 50px 0 50px;
+		}
+	}
+}
+
+.projects {
+	position: relative;
+	padding: 25px 0 35px;
+	display: inline-block;
+	width: 75%;
+	background-color: rgba(255, 255, 255, 0.3);
+	@include respond-to(md) {
+			width: 85%;
+		}
+	&__windows {
+		display: inline-block;
+		padding: 25px 0;
+		width: 40%;
+		color: #fff;
+	}
+	&__numbers {
+		position: relative;
+		font-size: 27px;
+		line-height: 55px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		@include respond-to(sm) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	&__numbers:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 75px;
+		height: 5px;
+		background: #4d4c4b;
+		left: -20px;
+		top: 40px;
+		@include respond-to(sm) {
+			top: 27px;
+			left: -28px;
+		}
+	}
+	&__info {
+		padding-top: 15px;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 3px;
+		@include respond-to(sm) {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}
+
+.projects:hover:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 5px;
+	background: red;
+	top: 100%;
+	left: 45%;
+	@include respond-to(sm) {
+		left: 40%;
+	}
+}

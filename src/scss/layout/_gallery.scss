@@ -1,0 +1,88 @@
+.gallery {
+	padding: 155px 0 85px;
+	text-align: center;
+	@include respond-to(md) {
+			padding: 70px 0 45px;
+		}
+	@include respond-to(sm) {
+			padding: 30px 0 45px;
+		}
+	@include respond-to(xs) {
+			padding: 20px 0;
+		}
+	&__list {
+		padding-bottom: 25px;
+	}
+	&__image {
+		display: block;
+	}
+	&__image:hover {
+		transform: scale(1.1, 1.1);
+	}
+}
+
+.text {
+	min-height: 360px;
+	padding: 0 50px;
+	text-align: center;
+	@include respond-to(lg) {
+			padding: 0 30px;
+			min-height: 294px;
+		}
+	@include respond-to(md) {
+			padding: 0 20px;
+			min-height: 220px;
+		}
+	@include respond-to(xs) {
+			padding: 0;
+			min-height: 200px;
+		}
+	&__present {
+		display: block;
+		padding: 70px 0 20px;
+		font-size: 14px;
+		@include respond-to(lg) {
+			padding: 70px 0 10px;
+			font-size: 13px;
+		}@include respond-to(md) {
+			padding: 50px 0 10px;
+			font-size: 13px;
+		}
+		@include respond-to(xs) {
+			font-size: 12px;
+			padding: 20px 0 10px;
+		}
+	}
+	&__heading {
+		font-size: 24px;
+		padding-bottom: 40px;
+		font-weight: 700;
+		@include respond-to(lg) {
+			padding-bottom: 20px;
+			font-size: 24px;
+		}
+		@include respond-to(md) {
+			padding-bottom: 10px;
+			font-size: 20px;
+		}
+		@include respond-to(xs) {
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+	}
+	&__info {
+		line-height: 30px;
+		@include respond-to(lg) {
+			line-height: 25px;
+			font-size: 15px;
+		}
+		@include respond-to(md) {
+			line-height: 21px;
+			font-size: 13px;
+		}
+		@include respond-to(xs) {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+}
