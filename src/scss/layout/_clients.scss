@@ -1,0 +1,44 @@
+// Clients
+
+.clients {
+	background: #efefef;
+	min-height: 365px;
+	text-align: center;
+	&__heading {
+		padding: 68px 0;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 28px;
+		letter-spacing: 2px;
+		@include respond-to(xs) {
+			letter-spacing: 0;
+		}
+	}
+}
+#clients-slider {
+	position: relative;
+}
+#clients-slider__prevSlide {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	font-size: 26px;
+	line-height: 30px;
+	cursor: pointer;
+	&:hover {
+		color: #e64a19;
+		transition: all 0.5s linear 0s;
+	}
+}
+#clients-slider__nextSlide {
+	position: absolute;
+	top: 35px;
+	right: 0;
+	font-size: 26px;
+	line-height: 30px;
+	cursor: pointer;
+	&:hover {
+		color: #e64a19;
+		transition: all 0.5s linear 0s;
+	}
+}

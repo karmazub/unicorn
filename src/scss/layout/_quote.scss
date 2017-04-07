@@ -1,0 +1,28 @@
+// Quote
+
+.fa-quote-right {
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+}
+.quote {
+	background: #212121;
+	text-align: center;
+}
+.quote-envelope {
+	padding: 80px 0 70px 0;
+	color: #eeeeee;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	&__substance {
+		padding: 30px 0 45px 0;
+	}
+	&__author {
+		font-style: italic;
+	}
+	@include respond-to(xs) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
