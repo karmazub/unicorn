@@ -1,0 +1,53 @@
+.teamMembers {
+	text-align: center;
+	padding: 100px 0;
+	@include respond-to(sm) {
+			padding: 70px 0;
+		}
+	&__heading {
+		font-size: 27px;
+		padding-bottom: 25px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		@include respond-to(sm) {
+			font-size: 25px;
+			padding-bottom: 15px;
+		}
+	}
+	&__info {
+		padding: 10px 25px 100px;
+		line-height: 35px;
+		@include respond-to(sm) {
+			line-height: 20px;
+			padding-bottom: 70px;
+		}
+	}
+	&__names {
+		display: block;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 30px;
+		@include respond-to(sm) {
+			font-size: 13px;
+			padding-bottom: 5px;
+			line-height: 20px;
+		}
+		@include respond-to(xs) {
+			font-size: 13px;
+			padding-bottom: 5px;
+			line-height: 20px;
+		}
+	}
+	&__works {
+		display: block;
+		@include respond-to(sm) {
+			font-size: 13px;
+			padding-bottom: 10px;
+		}
+	}
+	@include respond-to(md) { 
+	br { 
+		display: none;
+	}
+}
+}
